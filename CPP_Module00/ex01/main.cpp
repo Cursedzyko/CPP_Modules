@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 12:57:37 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/01/19 17:38:04 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/01/20 16:21:52 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,14 @@ int main(void)
 {
 	std::string cmd;
 	PhoneBook	PhoneBook;
-
+	
+	PhoneBook.Display();
 	while (1)
 	{
-		PhoneBook.Display();
+		std::cout << "> ";
 		getline(std::cin, cmd);
+		if (std::cin.eof())
+			break ;
 		if (cmd == "ADD")
 		{
 			PhoneBook.Add();

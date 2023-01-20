@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 14:36:43 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/01/19 17:41:29 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/01/20 16:15:49 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,9 @@ public:
 	Contact();
 	virtual ~Contact();
 
-	bool set_info(int in);
+	bool set_info(int in, int res);
+	void DisplayHeader(void);
+	void DisplayCont(void);
 };
 
 #endif
