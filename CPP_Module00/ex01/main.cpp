@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 12:57:37 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/01/20 16:21:52 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/01/20 16:26:53 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,22 +25,16 @@ int main(void)
 		if (std::cin.eof())
 			break ;
 		if (cmd == "ADD")
-		{
 			PhoneBook.Add();
-		}
 		else if (cmd == "SEARCH")
-		{
 			PhoneBook.Search();
-		}
 		else if (cmd == "EXIT")
 		{
 			std::cout << "Bye Bye!\n";
 			break ;
 		}
 		else
-		{
 			std::cout <<"Command available: ADD, SEARCH, EXIT\n";
-		}
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 14:16:06 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/01/20 16:16:18 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/01/20 16:27:27 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,7 @@ void	PhoneBook::Add(void)
 		if (ans == "no")
 			std::cout << "Nothing changed\n";
 		else if (ans == "yes")
-		{
-			this->contacts[1].set_info(1, 0);
-		}
-			
+			this->contacts[1].set_info(1, 0);		
 	}	
 	else if (this->contacts[this->amount].set_info(this->amount + 1, 1))
 		this->amount++;
@@ -78,5 +75,3 @@ void	PhoneBook::Search()
 			this->contacts[i - 1].DisplayCont();
 	}
 }
-
-//https://www.geeksforgeeks.org/cpp-program-to-show-use-of-this-keyword-in-class/
