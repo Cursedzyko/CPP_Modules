@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 16:49:00 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/01/24 14:11:53 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/01/25 13:59:20 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,9 @@ Account::Account(int initial_deposit)
     std::cout << "index:" << this->_accountIndex << ";";
     std::cout << "amount: 0;";
     std::cout << "created" << std::endl;
+}
+
+Account::Account()
+{
+    this->_accountIndex = this->_nbAccount++;
 }
