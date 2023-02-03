@@ -6,17 +6,17 @@
 #    By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/18 15:03:20 by zyunusov          #+#    #+#              #
-#    Updated: 2023/02/01 17:18:58 by zyunusov         ###   ########.fr        #
+#    Updated: 2023/02/03 13:19:43 by zyunusov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:= ex00
+NAME		:= ex01
 
 CPP			:= c++
 
 CPPFLAGS	:= -Wall -Werror -Wextra -std=c++98
 
-SRC			:= main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRC			:= main.cpp Zombie.cpp zombieHorde.cpp
 
 OBJS		:= $(SRC:.cpp=.o)
 
