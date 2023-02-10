@@ -6,13 +6,13 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 14:57:47 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/02/09 15:51:05 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/02/10 18:38:50 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon(std::string type)
+Weapon::Weapon(std::string type): _type(type)
 {
 }
 
