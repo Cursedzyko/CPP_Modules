@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:03:49 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/02/28 15:05:45 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/01 13:01:21 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main( void ) {
 	std::cout << "Damage: " << a.getAttackDamage() << "\n";
 	std::cout << "************Member funsctions***********\n";
 	a.setAttackDamage(4);
-	ClapTrap b("Bot");
+	ScavTrap b("Bot");
 	a.attack("Bot");
 	b.takeDamage(4);
 	std::cout << "Health of Clapper after attack: " << a.getHitPoint() << "\n";
@@ -33,8 +33,8 @@ int main( void ) {
 	b.beRepaired(15);
 	b.setEnergyPoint(10);
 	b.beRepaired(15);
-	a.guardGate();
 	std::cout << "Health of Bot after repairing " << b.getHitPoint() << "\n";
+	a.guardGate();
 
 	return (0);
 }
