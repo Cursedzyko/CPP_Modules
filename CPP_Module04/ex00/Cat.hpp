@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 12:29:42 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/02 12:31:08 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/03 14:08:19 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,12 @@ class Cat : public Animal
 {
 public:
 	Cat(void);
-	~Cat(void);
-}
+	virtual ~Cat(void);
+	Cat& operator=(const Cat& src);
+	Cat(const Cat& src);
+
+	void makeSound(void) const;
+};
 
 
 #endif

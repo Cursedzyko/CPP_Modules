@@ -6,17 +6,15 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 12:06:44 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/02 12:29:18 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/03 14:13:44 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-# define RED "\033[31m"
-
 Animal::Animal(void)
 {
-	this->_type = NULL;
+	this->_type = "";
 	std::cout << RED <<"Animal constructor called\n" << NORMAL;
 }
 
@@ -38,7 +36,7 @@ Animal& Animal::operator=(const Animal& src)
 	return (*this);
 }
 
-const std::string Animal::getType(void)
+const std::string Animal::getType(void) const
 {
 	return (this->_type);
 }
@@ -48,12 +46,7 @@ void Animal::setType(std::string type)
 	this->_type = type;
 }
 
-void makeSound();
+void Animal::makeSound(void) const
 {
-	if (this->_type == "Dog")
-		std::cout << "Wooooof\n";
-	else if (this->_type == "Cat")
-		std::cout << "Meeeeeow\n";
-	else if (this_type == NULL)
-		std::cout << "HERE\n";
+	std::cout << RED << "Can't make a sound\n" << NORMAL;
 }

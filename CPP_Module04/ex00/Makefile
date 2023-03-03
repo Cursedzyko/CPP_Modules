@@ -6,7 +6,7 @@
 #    By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/18 15:03:20 by zyunusov          #+#    #+#              #
-#    Updated: 2023/02/27 17:45:08 by zyunusov         ###   ########.fr        #
+#    Updated: 2023/03/03 14:38:45 by zyunusov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CPP			:= c++
 
 CPPFLAGS	:= -Wall -Werror -Wextra -std=c++98
 
-SRC			:= main.cpp ClapTrap.cpp
+SRC			:= main.cpp Dog.cpp Cat.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJS		:= $(SRC:.cpp=.o)
 

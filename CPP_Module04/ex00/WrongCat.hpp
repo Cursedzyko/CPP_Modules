@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongWrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/03 14:00:07 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/03 14:08:34 by zyunusov         ###   ########.fr       */
+/*   Created: 2023/03/03 14:34:24 by zyunusov          #+#    #+#             */
+/*   Updated: 2023/03/03 14:34:40 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef WRONG_CAT_HPP
+# define WRONG_CAT_HPP
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-class Dog: public Animal{
+class WrongCat : public WrongAnimal
+{
 public:
-	Dog(void);
-	virtual ~Dog(void);
-	Dog& operator=(const Dog& src);
-	Dog(const Dog& src);
+	WrongCat(void);
+	virtual ~WrongCat(void);
+	WrongCat& operator=(const WrongCat& src);
+	WrongCat(const WrongCat& src);
 
 	void makeSound(void) const;
 };
+
 
 #endif
