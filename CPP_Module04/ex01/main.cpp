@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:03:49 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/06 16:49:41 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:51:25 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,7 @@ int main()
 		b->getBrain()->setIdeas("Last idea of animals[b]", 4);
 		std::cout << "Last idea of animal[5]: " << c->getBrain()->getIdeas(4) << std::endl;
 		std::cout << "Last idea of animal[7]: " << b->getBrain()->getIdeas(4) << std::endl;
+		delete b;
 	}
+	return (0);
 }
