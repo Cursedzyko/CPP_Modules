@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:03:49 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/06 15:51:54 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:28:57 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 Deep copy = copying value to another address*/
 int main()
 {
-Animal	*animals[8];
+	Animal	*animals[8];
 	Brain	*brain;
 
 	std::cout << "\nCreatig Animals' array\n" << std::endl;
