@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 13:12:36 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/02/28 15:04:05 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/06 14:26:48 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ public:
 	ScavTrap(void);
 	ScavTrap(std::string name);
 	void guardGate();
+	void attack(const std::string& target);
 	~ScavTrap(void);
 };
 
