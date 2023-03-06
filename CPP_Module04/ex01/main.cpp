@@ -6,13 +6,16 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:03:49 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/06 15:43:52 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/06 15:51:54 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 #include "Cat.hpp"
 
+
+/*Shallow copy = copy will copy pointer to a pointer but they will point to same address
+Deep copy = copying value to another address*/
 int main()
 {
 Animal	*animals[8];
