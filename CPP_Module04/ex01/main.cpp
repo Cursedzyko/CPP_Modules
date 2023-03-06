@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:03:49 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/06 16:28:57 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:49:41 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,15 @@ int main()
 	std::cout << "\nDestructing Animals\n" << std::endl;
 	for (int i = 0; i < 8; i++)
 		delete animals[i];
+	{
+		std::cout << "=========================Shallow copy======================\n";
+		Animal *b = new Cat();
+		Animal *c( b );
+
+		std::cout << "\nAdding different ideas to animals[c] and animals[b]" << std::endl;
+		c->getBrain()->setIdeas("Last idea of animals[c]", 4);
+		b->getBrain()->setIdeas("Last idea of animals[b]", 4);
+		std::cout << "Last idea of animal[5]: " << c->getBrain()->getIdeas(4) << std::endl;
+		std::cout << "Last idea of animal[7]: " << b->getBrain()->getIdeas(4) << std::endl;
+	}
 }
