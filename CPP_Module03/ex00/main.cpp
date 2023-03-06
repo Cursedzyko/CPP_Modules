@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:03:49 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/02/27 18:20:07 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/06 14:06:36 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,5 @@ int main( void ) {
 	b.setEnergyPoint(10);
 	b.beRepaired(15);
 	std::cout << "Health of Bot after repairing " << b.getHitPoint() << "\n";
-
 	return (0);
 }
