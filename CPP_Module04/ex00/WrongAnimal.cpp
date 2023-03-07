@@ -25,7 +25,7 @@ WrongAnimal::~WrongAnimal(void)
 
 WrongAnimal::WrongAnimal(const WrongAnimal& src)
 {
-	this->_type = src._type;
+	*this = src;
 	std::cout << BLUE << "WrongAnimal copy constructor called\n" << NORMAL;
 }
 

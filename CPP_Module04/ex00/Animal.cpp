@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 12:06:44 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/03 14:13:44 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/07 12:18:29 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Animal::~Animal(void)
 
 Animal::Animal(const Animal& src)
 {
-	this->_type = src._type;
+	*this = src;
 	std::cout << RED << "Animal copy constructor called\n" << NORMAL;
 }
 

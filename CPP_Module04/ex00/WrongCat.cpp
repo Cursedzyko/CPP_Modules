@@ -12,7 +12,7 @@
 
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat(void)
+WrongCat::WrongCat(void): WrongAnimal()
 {
 	this->_type = "WrongCat";
 	std::cout << MAGENTA <<"WrongCat constructor called\n" << NORMAL;
@@ -30,9 +30,8 @@ WrongCat& WrongCat::operator=(const WrongCat& src)
 	return (*this);
 }
 
-WrongCat::WrongCat(const WrongCat& src)
+WrongCat::WrongCat(const WrongCat& src): WrongAnimal(src)
 {
-	this->_type = src._type;
 	std::cout << MAGENTA <<"WrongCat copy constructor called\n" << NORMAL;
 }
 

@@ -6,13 +6,13 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 12:29:36 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/03 14:09:11 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/07 12:16:56 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat(void)
+Cat::Cat(void): Animal()
 {
 	this->_type = "Cat";
 	std::cout << GREEN <<"Cat constructor called\n" << NORMAL;
@@ -30,9 +30,8 @@ Cat& Cat::operator=(const Cat& src)
 	return (*this);
 }
 
-Cat::Cat(const Cat& src)
+Cat::Cat(const Cat& src): Animal(src)
 {
-	this->_type = src._type;
 	std::cout << GREEN <<"Cat copy constructor called\n" << NORMAL;
 }
 
