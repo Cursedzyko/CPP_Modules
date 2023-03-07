@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 12:29:36 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/06 15:35:55 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/07 12:51:57 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,15 @@ Cat::~Cat(void)
 Cat& Cat::operator=(const Cat& src)
 {
 	this->_type = src.getType();
+	this->_brain = new Brain();
+	for(int i = 0; i < 100; i++)
+		this->_brain->setIdeas(src._brain->getIdeas(i), i);
 	std::cout << GREEN <<"Cat copy assignment operator called\n" << NORMAL;
 	return (*this);
 }
 
-Cat::Cat(const Cat& src)
+Cat::Cat(const Cat& src): Animal(src)
 {
-	*this = src;
 	std::cout << GREEN <<"Cat copy constructor called\n" << NORMAL;
 }
 
