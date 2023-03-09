@@ -6,11 +6,11 @@
 #    By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/18 15:03:20 by zyunusov          #+#    #+#              #
-#    Updated: 2023/03/09 15:01:12 by zyunusov         ###   ########.fr        #
+#    Updated: 2023/03/09 15:18:12 by zyunusov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:= ex01
+NAME		:= ex02
 
 CPP			:= c++
 
