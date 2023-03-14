@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Ice.hpp                                            :+:      :+:    :+:   */
+/*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/13 15:12:18 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/14 14:24:36 by zyunusov         ###   ########.fr       */
+/*   Created: 2023/03/14 11:51:52 by zyunusov          #+#    #+#             */
+/*   Updated: 2023/03/14 14:24:42 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ICE_HPP
-# define ICE_HPP
+#ifndef CHARACTER_HPP
+# define  CHARACTER_HPP
 
 # include "AMateria.hpp"
 # include "ICharacter.hpp"
 
-class Ice : public AMateria
+class Character : public ICharacter 
 {
+private:
+	AMateria *_in[4];
+	std::string _name;
 public:
-	Ice(void);
-	Ice(const Ice& src);
-	Ice& operator=(const Ice& src);
-	~Ice(void);
+	Character(void);
+	Character(std::string name);
+	~Character();
+	Character(const Character& src);
+	Character& operator=(const Character& src);
 
-	Ice* clone() const;
-	void use(ICharacter& target);
+	std::string const & getName() const;
+	void equip(AMateria* m);
+	void unequip(int idx);
+ 	void use(int idx, ICharacter& target);
 };
-
 
 #endif

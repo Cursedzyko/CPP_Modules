@@ -6,14 +6,15 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 16:31:05 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/13 16:31:41 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/14 14:24:09 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CURE_HPP
 # define CURE_HPP
 
-#include "AMateria.hpp"
+# include "AMateria.hpp"
+# include "ICharacter.hpp"
 
 class Cure : public AMateria
 {
@@ -25,7 +26,7 @@ public:
 
 	Cure* clone() const;
 	void use(ICharacter& target);
-}
+};
 
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 15:40:01 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/13 15:48:05 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/14 14:53:56 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Ice& Ice::operator=(const Ice& src)
 	return (*this);
 }
 
-Ice::Ice(void)
+Ice::~Ice(void)
 {
 	std::cout << "Ice destructor called\n";
 }
@@ -41,5 +41,5 @@ Ice* Ice::clone() const
 
 void Ice::use(ICharacter& target)
 {
-	std::cout << "* shoots an ice bolt at " << target << " *\n";
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *\n";
 }

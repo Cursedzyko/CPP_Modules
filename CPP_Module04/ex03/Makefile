@@ -6,17 +6,17 @@
 #    By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/18 15:03:20 by zyunusov          #+#    #+#              #
-#    Updated: 2023/03/13 14:26:09 by zyunusov         ###   ########.fr        #
+#    Updated: 2023/03/14 15:35:46 by zyunusov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:= ex02
+NAME		:= ex03
 
 CPP			:= c++
 
 CPPFLAGS	:= -Wall -Werror -Wextra -std=c++98
 
-SRC			:= main.cpp AMateria.cpp
+SRC			:= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
 
 OBJS		:= $(SRC:.cpp=.o)
 

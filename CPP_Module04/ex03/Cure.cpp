@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 16:31:54 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/13 16:32:50 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/14 14:53:52 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Cure& Cure::operator=(const Cure& src)
 	return (*this);
 }
 
-Cure::Cure(void)
+Cure::~Cure(void)
 {
 	std::cout << "Cure destructor called\n";
 }
@@ -41,5 +41,5 @@ Cure* Cure::clone() const
 
 void Cure::use(ICharacter& target)
 {
-	std::cout << "* heals " << target << "’s wounds * \n";
+	std::cout << "* heals " << target.getName() << "’s wounds * \n";
 }

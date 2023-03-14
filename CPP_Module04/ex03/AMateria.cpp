@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 14:21:36 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/13 14:42:59 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/14 15:11:31 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ AMateria::~AMateria(void)
 	std::cout << "AMateria destructor called\n";
 }
 
-AMateria& AMateria::operator=(const AMateria& src)
-{
-	this->_type = src._type;
-	std::cout << "AMateria Copy assignment operator called\n";
-	return (*this);
-}
+// AMateria& AMateria::operator=(const AMateria& src)
+// {
+// 	this->_type = src._type;
+// 	std::cout << "AMateria Copy assignment operator called\n";
+// 	return (*this);
+// }
 
 AMateria::AMateria(const AMateria& src)
 {

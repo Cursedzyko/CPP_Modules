@@ -6,14 +6,15 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 14:16:49 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/13 15:12:02 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/14 15:11:16 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef AMATERIA_HPP
 # define AMATERIA_HPP
 
-#include <iostream>
+# include "ICharacter.hpp"
+# include <iostream>
 
 class AMateria {
 protected:
@@ -23,7 +24,7 @@ public:
 	AMateria(void);
 	virtual ~AMateria();
 	AMateria(const AMateria& src);
-	AMateria& operator=(const AMateria& src);
+	// AMateria& operator=(const AMateria& src);
 
 	std::string const & getType() const;
 	
