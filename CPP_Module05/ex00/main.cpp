@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 23:44:11 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/16 00:31:23 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/16 00:32:54 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int main()
 		try
 		{
 			Bureaucrat a("john", 1);
+			std::cout << a;
 			a.increase();
 		}
 		catch(Bureaucrat::GradeTooHighException& e)
@@ -29,6 +30,7 @@ int main()
 		try
 		{
 			Bureaucrat c("JJ", 0);
+			std::cout << c;
 		}
 		catch(Bureaucrat::GradeTooHighException& e)
 		{
