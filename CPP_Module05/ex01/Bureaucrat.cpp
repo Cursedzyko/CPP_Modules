@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 23:44:52 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/16 16:37:09 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/16 16:35:01 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& src)
 
 Bureaucrat::Bureaucrat(const Bureaucrat& src): _name(src._name), _grade(src._grade)
 {
-
 	std::cout << "Bureaucrat Copy constructor called\n";
 }
 
@@ -68,4 +67,12 @@ std::ostream& operator<<(std::ostream &output, Bureaucrat const &src)
 {
 	output << "Name: " << src.getName() << ", Grade: " << src.getGrade() << std::endl;
 	return (output);
+}
+
+void	Bureaucrat::signForm(Form const &src)
+{
+	if (this->_grade <= src.getGradeToSign())
+		std::cout << this->_name << " signed " << src.getName() << std::endl;
+	else
+		std::cout << this->_name << "  couldn’t sign " << src.getName() << " because required grade is too high" << std::endl;
 }
