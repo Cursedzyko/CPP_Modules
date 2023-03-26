@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 23:44:11 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/03/26 19:51:22 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/03/26 19:59:47 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,19 +19,19 @@ int main()
 		std::cout << "----------------------------------------------------------\n";
         std::cout << "|           TEST Intern                                   |\n";
         std::cout << "----------------------------------------------------------\n";
-		Intern someRandomIntern;
-		AForm* rrf;
-		AForm* scf;
-		AForm* ppf;
-		AForm* wrong;
-		rrf = someRandomIntern.makeForm("robotomy request", "Bender");
-		scf = someRandomIntern.makeForm("Shrubbery Creation", "Bender");
-		ppf = someRandomIntern.makeForm("Presidential Pradon", "Bender");
-		wrong = someRandomIntern.makeForm("Wrong Wrong", "Bender");
+		Intern r;
+		AForm* rr;
+		AForm* sc;
+		AForm* pp;
+		AForm* w;
+		rr = r.makeForm("robotomy request", "Bender");
+		sc = r.makeForm("shrubbery Creation", "Bender");
+		pp = r.makeForm("presidential Pradon", "Bender");
+		w = r.makeForm("Wrong Wrong", "Bender");
 		std::cout << "----------------------------------------------------------\n\n";
-		delete rrf;
-		delete scf;
-		delete ppf;
+		delete rr;
+		delete sc;
+		delete pp;
 	}
     return 0;
 }
