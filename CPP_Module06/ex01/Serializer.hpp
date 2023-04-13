@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:30:17 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/04/04 14:56:05 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/04/13 16:21:50 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 # define SERIALIZER_HPP
 
 # include <iostream>
-# include <cstdint>
 # include <sstream>
 # include <string>
+#include <cstdlib>
+#include <stdint.h>
 
 typedef struct Data
 {

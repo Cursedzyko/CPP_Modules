@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/31 13:46:47 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/04/03 15:23:57 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/04/13 15:57:19 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,6 +153,6 @@ void ScalarConverter::convert(std::string literal)
 	std::cout << "Char: " << convertToChar(literal) << std::endl;
 	std::cout << "Int: " << convertToInt(literal) << std::endl;
 	std::cout << "Float: " << convertToFloat(literal) << std::endl;
-	std::cout << "Char: " << convertToDouble(literal) << std::endl;
+	std::cout << "Double: " << convertToDouble(literal) << std::endl;
 }
 

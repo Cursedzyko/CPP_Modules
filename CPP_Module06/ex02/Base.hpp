@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:30:26 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/04/06 14:55:46 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/04/13 16:22:50 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define BASE_HPP
 
 #include <iostream>
+#include <cstdlib>
 
 class Base
 {
