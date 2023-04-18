@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:31:29 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/04/06 15:02:30 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/04/18 17:16:04 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,10 @@ void identify(Base* p)
 		std::cout << "the actual type pointed to is: A\n";
 	else if (dynamic_cast<B *> (p))
 		std::cout << "the actual type pointed to is: B\n";
-	else
+	else if (dynamic_cast<C *> (p))
 		std::cout << "the actual type pointed to is: C\n";
+	else
+		std::cout << "the actual type pointed to is: NULL\n";
 }
 
 void identify(Base& p)
