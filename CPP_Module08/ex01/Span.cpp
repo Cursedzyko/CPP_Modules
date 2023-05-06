@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 14:55:25 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/05/03 13:06:32 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:11:45 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,13 +51,14 @@ void Span::addRange(std::vector<unsigned int>::iterator begin, std::vector<unsig
 	}
 }
 
-unsigned int Span::longestSpan()
+int Span::longestSpan()
 {
 	try{
 		if (this->_nb <= 1)
 			throw NoSpan();
-		unsigned int max = *std::max_element(this->_vec.begin(), this->_vec.end());
-		return (max);
+		std::vector<int> tmp = this->_vec;
+		std::sort(tmp.begin(), tmp.end());
+		return (tmp[this->_nb - 1] - tmp[0]);
 	}
 	catch(std::exception &e)
 	{
@@ -67,14 +68,24 @@ unsigned int Span::longestSpan()
 	
 }
 
-unsigned int Span::shortestSpan()
+int Span::shortestSpan()
 {
-	unsigned int min;
 	try{
 		if (this->_nb <= 1)
 			throw NoSpan();
-		min = *std::min_element(this->_vec.begin(), this->_vec.end());
-		return (min);
+		size_t j = this->_nb - 1;
+		std::vector<int> tmp = this->_vec;
+		std::sort(tmp.begin(), tmp.end());
+		int s = tmp[j] - tmp[0];
+		for (size_t i = 0; i < j; i++)
+		{
+			if (i + 1 <= j)
+				s = (s > (tmp[i + 1] - tmp[i])) ? tmp[i + 1] - tmp[i] : s;
+			if (j - 1 >= i)
+				s = (s > (tmp[j] - tmp[j - 1])) ? tmp[j] - tmp[j - 1] : s;
+			j--;
+		}
+		return (s);
 	}
 	catch(std::exception &e)
 	{

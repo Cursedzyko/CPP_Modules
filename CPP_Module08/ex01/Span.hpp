@@ -6,7 +6,7 @@
 /*   By: zyunusov <zyunusov@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 14:51:44 by zyunusov          #+#    #+#             */
-/*   Updated: 2023/05/03 13:05:25 by zyunusov         ###   ########.fr       */
+/*   Updated: 2023/05/06 12:02:55 by zyunusov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,8 @@ public:
 	~Span();
 
 	void addNumber(unsigned int nb);
-	unsigned int longestSpan();
-	unsigned int shortestSpan();
+	int longestSpan();
+	int shortestSpan();
 	void addRange(std::vector<unsigned int>::iterator begin, std::vector<unsigned int>::iterator end);
 	void print();
 };
